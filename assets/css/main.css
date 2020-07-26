@@ -3757,7 +3757,7 @@
 			}
 
 				#main > header {
-					margin: 0 2em 1.5em 2em;
+					margin: 0 12em 1.5em 2em;
 				}
 
 					#main > header h2 {
@@ -3849,7 +3849,7 @@
 			.box {
 				border-radius: 0;
 				box-shadow: none;
-				margin: 1em 0 0 0;
+				margin: 0 0 0 0;
 				padding: 3em 1em !important;
 			}
 
@@ -3875,7 +3875,7 @@
 
 					.box .image.featured:last-child {
 						margin-bottom: -3em;
-						margin-top: 3em;
+						margin-top: 1em;
 					}
 
 		/* Banner */
