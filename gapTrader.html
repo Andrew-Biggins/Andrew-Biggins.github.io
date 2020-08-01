@@ -49,30 +49,63 @@
                     <li>Trades are not held from one day to the next, if the target or stop-loss is not hit they are closed at the closing price of the final minute candle of the day regardless of any profit or loss</li>
                 </ul>
 
-                <!--<div class="row">
-                    <div class="row-6 row-12-mobilep">-->
 
-                        <h3>Managing Data</h3>
-                        <img src="images/DataManagement.PNG" alt="" width="100%" height="85%" />
 
-                        <p>Use the Data Management tab to upload and manage data-sets for use on the Gap Trader's Strategy Tester. Any unfilled gaps are found and statistics generated based on the Fibonacci retracement and extension levels. These can highlight important support and resistance levels and be useful making decisions in any trading strategy.</p>
-                        <img src="images/UploadDataWindow.PNG" alt="" width="85%" height="85%" />
-                        <p>
-                            To upload a new data-set select the files with daily open, high, low, close (OHLC) candle data and one minute bid and ask OHLC data. Up to three years worth of one minute data can be downloaded for free from <a href="https://www.dukascopy.com/swiss/english/marketwatch/historical/" target="_blank">Dukascopy.</a> For for best results download the daily data from <a href="https://uk.finance.yahoo.com/quote/YHOO/history/" target="_blank">Yahoo Finance</a> to get the official open and close prices.
-                            Alternatively, select Derive Daily Levels from Minute Data to allow the application to calculate the daily open and close prices from the minute data using the mid-point of bid and ask candles data.
-                        </p>
+                <h3>Managing Data</h3>
+                <img src="images/DataManagement.PNG" alt="" width="100%" height="85%" />
 
-                        <p><b>Note:</b> It is important the correct timezone is selected so that cash price data can be identified and separated from futures.</p>
+                <p>Use the Data Management tab to upload and manage data-sets for use on the Gap Trader's Strategy Tester. Any unfilled gaps are found and statistics generated based on the Fibonacci retracement and extension levels. These can highlight important support and resistance levels and be useful making decisions in any trading strategy.</p>
+                <img src="images/UploadDataWindow.PNG" alt="" width="85%" height="85%" />
+                <p>
+                    To upload a new data-set select the files with daily open, high, low, close (OHLC) candle data and one minute bid and ask OHLC data. Up to three years worth of one minute data can be downloaded for free from <a href="https://www.dukascopy.com/swiss/english/marketwatch/historical/" target="_blank">Dukascopy.</a> For for best results download the daily data from <a href="https://uk.finance.yahoo.com/quote/YHOO/history/" target="_blank">Yahoo Finance</a> to get the official open and close prices.
+                    Alternatively, select Derive Daily Levels from Minute Data to allow the application to calculate the daily open and close prices from the minute data using the mid-point of bid and ask candles data.
+                </p>
 
-                        <p>New data can be added to existing data-sets in the same way. However, care should be taken to ensure the new data directly follows or overlaps the existing data to prevent potentially inaccurate gaps and levels being calculated.</p>
-                    <!--</div>
-                    <div class="row-6 row-12-mobilep">-->
-                        <h3>Testing and Finding Strategies</h3>
-                        <img src="images/StrategyTester3.PNG" alt="" width="100%" height="85%"/>
+                <p><b>Note:</b> It is important the correct timezone is selected so that cash price data can be identified and separated from futures.</p>
 
-                        <p></p>
-                    <!--</div>
-                </div> -->
+                <p>New data can be added to existing data-sets in the same way. However, care should be taken to ensure the new data directly follows or overlaps the existing data to prevent potentially inaccurate gaps and levels being calculated.</p>
+
+                <h3>Testing and Finding Strategies</h3>
+                <img src="images/StrategyTester3.PNG" alt="" width="100%" height="85%" />
+
+                <p>The strategy tester is used for back-testing specific gap-fill strategies with chosen entry and target Fibonacci levels and stop-loss size and management. Alternatively, the strategies can be searched for; the strategy finder back-tests all the selected combinations and displays any profitable results. </p>
+
+                <h4>Communal Controls</h4>
+
+                <p>
+                    The options selected in the Communal Controls are on both the Manual Test and automatic Strategy Finder.
+                    <ul>
+                        <li>Use the radio buttons to select the type of gap-fill strategy test (see above, The Gap Fill Strategy)</li>
+                        <li>Set the account starting balance and the percentage to risk on each trade</li>
+                        <li>The start and end dates selects when to start and end the test</li>
+                        <li>The start time can restrict entering a trade before the selected time on each day - defaults the market open time</li>
+                        <li>The end time can ensure any open trade is closed before the selected time on each day - defaults to the market close time</li>
+                        <li>Trade direction enables only taking long trades or only taking short trades</li>
+                    </ul>
+                </p>
+
+                <h4>Manual Test</h4>
+
+                <p>Use the Manual Test to back-test a specific entry, target and stop-loss strategy. Entries and targets can be Fibonacci retracement or extension levels, or a fixed number of points from the market's daily opening price. When the Fibonacci options are selected the text-boxes can adjust the entry or target by a chosen number of points to fine-tune the strategy. </p>
+
+                <p>The stop-loss size can be either a fixed number of points or percentage of the gap size on the day of the trade. Stop management offers trail the stop-loss at a chosen number of points behind the market once the trade is in profit by that amount. In this case, the stop-loss is updated at the start of each minute.</p>
+
+                <p>A minimum gap size can be entered to restrict taking trades to days the daily gap size in points exceeds the chosen value.</p>
+
+                <p>
+                    The trades and equity curve generated by the strategy can be viewed using the buttons in the strategy metrics box. Further statistics can be seen by clicking elsewhere on the metrics, as shown below.
+
+                    <img src="images/StrategyStats.PNG" alt="" width="70%" height="85%" />
+                </p>
+
+
+                <h4>Strategy Finder</h4>
+                
+                <p>The Strategy Finder is used for searching for the most profitable strategies. Alternative criteria such as trade win percentage, profit factor or trade expectancy can be used with the filtering and sorting functions to find a desirable strategy.</p>
+                
+                <p>Fixed entry and target levels can be selected. This tests only those levels against all the combinations of the other criteria. Not selected a fixed entry or target level will include all combinations of each one in the search.</p>
+
+                <p>The filters will remove any trades that do not meet the chosen criteria from the search results. Clicking a header column will sort the results by that field.</p>
             </div>
         </section>
 
